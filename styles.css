@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body,select,input {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+}
+
+.active-measurment{
+    color: #4465E9;
+    text-decoration: underline;
+    text-decoration-color: #4465E9;
+}
+
+.converter-container{
+    padding: 1rem;
+    width: 60%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin: 2rem auto 0;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav-container,form{
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-container li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.nav-container li:hover{
+    color: #4465E9;
+    text-decoration: underline;
+    text-decoration-color: #4465E9;
+}
+
+button:hover{
+    color: white;
+    background-color: #4465E9;
+}
+
+.nav-container nav{
+    display: flex;
+    gap: 4rem;   
+}
+
+form,.input-container{
+    font-size: 1.5rem;;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    gap: 0.5rem;
+}
+
+
+input, select{
+    width: 75%;
+    font-size: 1.2rem;
+}
+
+input, select,.form-button{
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+}
+
+.form-button{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 7rem;
+    padding: 0.2rem;
+}
+
+.measurment-choice,button{
+    cursor: pointer;
+}
+
+.result-container{
+    font-size: 2rem;
+}
+
+.result-container p{
+    margin-bottom:1rem;
+}
+
+.hidden{
+    display: none;
+}
+

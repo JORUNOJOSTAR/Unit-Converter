@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Uint Converter</title>
+</head>
+<body>
+    <div class="converter-container">
+        <div class="title">
+            <h1>Unit Converter</h1>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <li><h3 class="measurment-choice active-measurment">Length</h3></li>
+                <li><h3 class="measurment-choice">Weight</h3></li>
+                <li><h3 class="measurment-choice">Temperature</h3></li>
+            </nav>
+        </div>
+        
+        <form onsubmit="return false">
+            <div class="result-container hidden">
+                <p>Result of your caculation</p>
+                   <p>
+                    <span id="from-value"></span> = 
+                    <span id="to-value"></span>
+                </p>
+            </div>
+            <div class="label-input-container">
+                <div class="input-container">
+                    <label for="length">Enter the <span id="measurment">length</span> to covert</label>
+                    <input id="length" type="number">
+                </div>
+                <div class="input-container">
+                    <label for="unit-from">Unit to covert</label>
+                    <select name="unitFrom" id="unit-from">
+                    </select>
+                </div>
+                 <div class="input-container">
+                    <label for="unit-to">Unit to covert</label>
+                    <select name="unitTo" id="unit-to">
+                    </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="form-button" onclick="btnClick()">Convert</button>
+            </div> 
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
