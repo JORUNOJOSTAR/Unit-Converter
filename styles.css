@@ -101,3 +101,29 @@ input, select,.form-button{
     display: none;
 }
 
+@media only screen and (max-device-width: 540px){
+    /* body{
+        background-color: black;
+    } */
+
+    .converter-container{
+        width: 80%;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+    .nav-container{
+        padding: 0;
+    }
+
+    .nav-container nav{
+        gap:0.8rem;
+    }
+
+    .nav-container li,form,.input-container,.result-container,input,select{
+        font-size: 1.2rem;
+    }
+
+    
+}
